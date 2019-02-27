@@ -5,4 +5,8 @@
     <RootNamespace>Clean_Architecture.Infrastructure</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Clean-Architecture.Core\Clean-Architecture.Core.csproj" />
+  </ItemGroup>
+
 </Project>

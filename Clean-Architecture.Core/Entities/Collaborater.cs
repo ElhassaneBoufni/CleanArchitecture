@@ -4,14 +4,18 @@ using System.Text;
 
 namespace Clean_Architecture.Core.Entities
 {
-    class Collaborater
+    public class Collaborater
     {
-        public string Id { get; private set; }
-        public string FirstName { get; private set; }
-        public string LastName { get; private set; }
-        public string Email { get; private set; }
-        public string UserName { get; private set; }
-        public string PasswordHash { get; private set; }
+        public string Id { get; set; }
+        public string FirstName {  get;  set; } = "Estebane";
+        public string LastName { get; set; }
+        public string Email { get; set; }
+        public string UserName { get; set; }
+        public string PasswordHash { get; set; }
+
+        public Collaborater()
+        {
+        }
 
         public Collaborater( string firstName, string lastName, string email, string userName, string passwordHash=null, string id = null)
         {
@@ -22,5 +26,11 @@ namespace Clean_Architecture.Core.Entities
             UserName = userName;
             PasswordHash = passwordHash;
         }
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
+
     }
 }
