@@ -1,0 +1,24 @@
+﻿@model IEnumerable<Clean_Architecture.Core.Entities.Collaborater>;
+@{
+    ViewData["Title"] = "Home Page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Welcome</h1>
+    <div>Je suis la vue index</div>
+    <table>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+        </tr>
+        @{
+            foreach (var collab in Model)
+            {
+                <tr>
+                    <td>@collab.FirstName</td>
+                    <td>@collab.LastName</td>
+                </tr>
+            }
+        }
+    </table>
+</div>

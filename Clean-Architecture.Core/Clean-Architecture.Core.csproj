@@ -5,4 +5,8 @@
     <RootNamespace>Clean_Architecture.Core</RootNamespace>
   </PropertyGroup>
 
+  <ItemGroup>
+    <Folder Include="DTO\" />
+  </ItemGroup>
+
 </Project>
